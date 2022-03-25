@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".vscode": true,
+    ".gitignore": true,
+    "package.json": true,
+    "package-lock.json": true,
+    "public": true,
+    "README.md": true,
+    "vite.config.ts": true,
+    "tsconfig.json": true,
+    "src/vite-env.d.ts": true
+  }
+}
