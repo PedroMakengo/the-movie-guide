@@ -1,15 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import MovieDetails from "./pages/MovieDetails";
+import PersonDetails from "./pages/PersonDetails";
+import PopularPersons from "./pages/PopularPersons";
+import Profile from "./pages/Profile";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/movieDetails" element={<MovieDetails />} />
-        <Route path="/movieDetails" element={<MovieDetails />} />
-        <Route path="/movieDetails" element={<MovieDetails />} />
-        <Route path="/movieDetails" element={<MovieDetails />} />
+        <Route path="/movie-details" element={<MovieDetails />} />
+        <Route path="/person-details" element={<PersonDetails />} />
+        <Route path="/popular-persons" element={<PopularPersons />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
