@@ -1,7 +1,12 @@
-import { useState } from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
-  return <div>The Movie Guide</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
