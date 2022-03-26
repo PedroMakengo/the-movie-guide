@@ -5,9 +5,9 @@ import logo from "../../assets/logo/logo.svg";
 function Header() {
   return (
     <header>
-      <div>
+      <Link to="/" className="logo">
         <img src={logo} alt="" />
-      </div>
+      </Link>
       <nav>
         <Link to="/">Movies</Link>
         <Link to="/popular-persons">People</Link>
