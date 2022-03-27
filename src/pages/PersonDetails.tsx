@@ -5,6 +5,7 @@ function PersonDetails() {
   const [person, setPerson] = useState<string | null>(null);
   const { id } = useParams();
 
+  // Pegar dados do usuário pelo o seu id
   useEffect(() => {
     console.log(id);
     setPerson("Pedro");
