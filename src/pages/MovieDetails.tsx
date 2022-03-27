@@ -1,8 +1,7 @@
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function MovieDetails() {
   const { id } = useParams();
-  console.log(id);
 
   return (
     <div>
