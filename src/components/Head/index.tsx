@@ -6,7 +6,12 @@ interface ITHead {
 }
 
 function Head({ title, description }: ITHead) {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    document.title = "The Movie Guide | " + title;
+    document
+      .querySelector('meta[name="description"')
+      ?.setAttribute("content", description);
+  }, [title, description]);
   return <></>;
 }
 
