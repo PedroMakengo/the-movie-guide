@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
+import Head from "../components/Head";
 
 function MovieDetails() {
   const { id } = useParams();
 
   return (
-    <div>
+    <main>
+      <Head title="Movie Details" description="Testando" />
       <h1>MovieDetails {id}</h1>
-    </div>
+    </main>
   );
 }
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Head from "../components/Head";
 
 function PersonDetails() {
   const [person, setPerson] = useState<string | null>(null);
@@ -13,9 +14,10 @@ function PersonDetails() {
 
   if (person === null) return null;
   return (
-    <div>
+    <main>
+      <Head title="PersonDetails" description="Testando" />
       <h1>PersonDetails {id}</h1>
-    </div>
+    </main>
   );
 }
 
