@@ -1,8 +1,11 @@
+import Head from "../components/Head";
+
 function Profile() {
   return (
-    <div>
+    <main>
+      <Head title="PopularPerson" description="Testando" />
       <h1>Profile</h1>
-    </div>
+    </main>
   );
 }
 

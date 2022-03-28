@@ -4,7 +4,7 @@ import Head from "../components/Head";
 function PopularPersons() {
   return (
     <main>
-      <Head title="PersonDetails" description="Testando" />
+      <Head title="PopularPerson" description="Testando" />
       <h1>PopularPersons</h1>
       <Link to="/person-details/1">Pedro Makengo</Link>
       <Link to="/person-details/2">Antónia Manuel Vicente</Link>
