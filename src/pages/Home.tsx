@@ -30,8 +30,8 @@ function Home() {
     <main>
       <Head title="Home" description="Testando" />
       <Banner array={arrayList} />
-      <Link to="/movie-details/1">Filme</Link>
-      <Link to="/movie-details/2">Filme</Link>
+      {/* <Link to="/movie-details/1">Filme</Link>
+      <Link to="/movie-details/2">Filme</Link> */}
     </main>
   );
 }
