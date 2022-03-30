@@ -4,6 +4,8 @@ interface ITButtons {
   array: string[];
 }
 
+function handleClick() {}
+
 function Banner({ array }: ITButtons) {
   return (
     <SectionBanner>
@@ -14,7 +16,7 @@ function Banner({ array }: ITButtons) {
         <span>Filter By:</span>
         <ButtonList>
           {array.map((button) => (
-            <button>{button}</button>
+            <button onClick={handleClick}>{button}</button>
           ))}
         </ButtonList>
       </Container>

@@ -46,5 +46,7 @@ export const ButtonList = styled.div`
     padding: 8px 16px;
     height: 40px;
     margin-top: 1rem;
+
+    cursor: pointer;
   }
 `;
