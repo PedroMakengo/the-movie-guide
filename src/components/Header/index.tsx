@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.svg";
 import LinkNavegate from "../LinkNavegate";
 
-import { Header as ContentHeader } from "./style";
+import { Header as ContentHeader, Container } from "./style";
 
 const arrayLinkNavegate = [
   { id: 1, to: "/", route: "Movies" },
@@ -14,17 +14,19 @@ const arrayLinkNavegate = [
 function Header() {
   return (
     <ContentHeader>
-      <Link to="/" className="logo">
-        <img src={logo} alt="" />
-      </Link>
-      <nav>
-        {arrayLinkNavegate.map(({ id, to, route }) => (
-          <LinkNavegate key={id} to={to}>
-            {route}
-          </LinkNavegate>
-        ))}
-      </nav>
-      <input type="text" placeholder="Search a title" />
+      <Container>
+        <Link to="/" className="logo">
+          <img src={logo} alt="" />
+        </Link>
+        <nav>
+          {arrayLinkNavegate.map(({ id, to, route }) => (
+            <LinkNavegate key={id} to={to}>
+              {route}
+            </LinkNavegate>
+          ))}
+        </nav>
+        <input type="text" placeholder="Search a title" />
+      </Container>
     </ContentHeader>
   );
 }
