@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ContentButton = styled.button`
-  margin-right: 1rem;
+  margin-right: 0.8rem;
 
-  padding: 8px 16px;
+  padding: 8px 12px;
   height: 40px;
   margin-top: 1rem;
 
@@ -13,6 +13,7 @@ export const ContentButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
 `;
 
 export const ButtonAtive = styled(ContentButton)`

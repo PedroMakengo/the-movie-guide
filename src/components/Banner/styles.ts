@@ -12,7 +12,7 @@ export const SectionBanner = styled.div`
 `;
 
 export const Container = styled.div`
-  max-width: 70rem;
+  max-width: 60rem;
   margin: 0 auto;
   text-align: center;
 
@@ -28,7 +28,7 @@ export const Container = styled.div`
   h1 {
     width: 781px;
     font-weight: 700;
-    font-size: 46px;
+    font-size: 44px;
   }
   span {
     text-transform: uppercase;

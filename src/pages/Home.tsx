@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import Head from "../components/Head";
 import Banner from "../components/Banner";
+import PopularFilms from "../components/PopularFilms";
 
 const arrayList = [
   "Acção",
@@ -30,6 +31,7 @@ function Home() {
     <main>
       <Head title="Home" description="Testando" />
       <Banner array={arrayList} />
+      <PopularFilms />
     </main>
   );
 }

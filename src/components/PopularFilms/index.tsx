@@ -1,8 +1,10 @@
+import { ContainerPopular } from "./styles";
+
 function PopularFilms() {
   return (
-    <section>
+    <ContainerPopular>
       <h2>Popular Films This Week</h2>
-    </section>
+    </ContainerPopular>
   );
 }
 
