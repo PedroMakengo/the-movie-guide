@@ -1,10 +1,9 @@
 import { SectionBanner, Container, ButtonList } from "./styles";
+import Button from "../Button";
 
 interface ITButtons {
   array: string[];
 }
-
-function handleClick() {}
 
 function Banner({ array }: ITButtons) {
   return (
@@ -16,7 +15,7 @@ function Banner({ array }: ITButtons) {
         <span>Filter By:</span>
         <ButtonList>
           {array.map((button) => (
-            <button onClick={handleClick}>{button}</button>
+            <Button key={button}>{button}</Button>
           ))}
         </ButtonList>
       </Container>

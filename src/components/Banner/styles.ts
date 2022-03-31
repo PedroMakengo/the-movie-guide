@@ -39,14 +39,4 @@ export const ButtonList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  button {
-    margin-right: 1rem;
-
-    padding: 8px 16px;
-    height: 40px;
-    margin-top: 1rem;
-
-    cursor: pointer;
-  }
 `;
