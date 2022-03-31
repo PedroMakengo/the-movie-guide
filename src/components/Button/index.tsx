@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaWindowClose } from "react-icons/fa";
+import { FaTimesCircle } from "react-icons/fa";
 import { ContentButton, ButtonAtive } from "./styles";
 
 interface ITButton {
@@ -10,14 +10,15 @@ function Button({ children }: ITButton) {
   const [ative, setAtive] = useState(false);
 
   function handleAtiveButton(event: any) {
-    console.log(event.target.innerText);
+    event.preventDefault();
     setAtive((ative) => !ative);
+    console.log(event.target.innerText);
   }
 
   if (ative) {
     return (
       <ButtonAtive className="ative" onClick={handleAtiveButton}>
-        {children} <FaWindowClose />
+        {children} <FaTimesCircle />
       </ButtonAtive>
     );
   } else {
