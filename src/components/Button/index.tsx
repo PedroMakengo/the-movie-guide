@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaWindowClose } from "react-icons/fa";
 import { ContentButton, ButtonAtive } from "./styles";
 
 interface ITButton {
@@ -16,7 +17,7 @@ function Button({ children }: ITButton) {
   if (ative) {
     return (
       <ButtonAtive className="ative" onClick={handleAtiveButton}>
-        {children} x
+        {children} <FaWindowClose />
       </ButtonAtive>
     );
   } else {
