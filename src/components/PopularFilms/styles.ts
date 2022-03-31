@@ -11,9 +11,17 @@ export const ContainerPopular = styled.div`
 `;
 
 export const ListFilms = styled.div`
-  background: red;
-  height: 100vh;
-  margin-top: 2rem;
-
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+`;
+
+export const Movie = styled.div`
+  width: 200px;
+  height: 264px;
+  background: red;
+  border-radius: 4px;
+  margin-top: 2rem;
 `;
