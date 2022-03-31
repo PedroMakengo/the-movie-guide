@@ -1,4 +1,10 @@
-import { ContainerPopular, ListFilms, Movie } from "./styles";
+import {
+  ContainerPopular,
+  ListFilms,
+  Movie,
+  BannerMovie,
+  Content,
+} from "./styles";
 
 function PopularFilms() {
   return (
@@ -7,7 +13,11 @@ function PopularFilms() {
 
       <ListFilms>
         <Movie>
-          <h1>Filme 1</h1>
+          <BannerMovie />
+          <Content>
+            <h3>Filme 1</h3>
+            <span>Trabalhando</span>
+          </Content>
         </Movie>
       </ListFilms>
     </ContainerPopular>

@@ -19,6 +19,23 @@ export const ListFilms = styled.div`
 `;
 
 export const Movie = styled.div`
+  height: auto;
+`;
+
+export const Content = styled.div`
+  margin-top: 1rem;
+  color: #fff;
+
+  h3 {
+    font-weight: 500;
+  }
+
+  span {
+    font-weight: 300;
+  }
+`;
+
+export const BannerMovie = styled.div`
   width: 200px;
   height: 264px;
   background: red;
