@@ -9,3 +9,11 @@ export const ContainerPopular = styled.div`
     color: #00df5e;
   }
 `;
+
+export const ListFilms = styled.div`
+  background: red;
+  height: 100vh;
+  margin-top: 2rem;
+
+  display: flex;
+`;
