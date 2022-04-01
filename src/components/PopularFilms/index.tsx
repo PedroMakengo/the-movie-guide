@@ -19,6 +19,7 @@ function PopularFilms() {
 
       setMovie(data.results);
       setLoading(false);
+      console.log(data.results);
     })();
   }, []);
 
@@ -32,7 +33,7 @@ function PopularFilms() {
         {movie.map((item: any) => (
           <Link
             key={item.id}
-            to={`/movie-details/${item.id}`}
+            to={`/movie-details/${item.original_title}`}
             className="movie"
           >
             <BannerMovie
